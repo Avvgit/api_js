@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif; /* afecta a todo menos a los textos de los formularios por eso se declaran mas abajo en form otra vez */
+}
+
+.contenedor{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  max-width: 70vw;
+  text-align: center;
+  padding: 20px 20px 50px;
+  margin: 10% auto 0;
+  background-color: #292b44;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor__titulo{
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.contenedor__resultado {
+  margin-bottom: 2rem;
+}
+
+.contenedor__datos{
+  color: white;
+}
+
+form input[type="text"], form input[type="submit"], form select{ 
+  width: 100%;
+  margin: 0px 0 1.5rem;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: .9rem 1.2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contenedor__flex {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+form input[type="submit"]{
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: #6c8adf;
+  border: thin solid #6c8adf;
+  color: #fff;
+  font-weight: 500;
+  transition: all 1s ease-out;
+  margin-bottom: 2rem;
+}
+
+form input[type="submit"]:hover{
+  width: 50%;
+  background-color: #fff;
+  color: #6c8adf;
+  border: thin solid #fff;
+}
+
+@media(max-width: 750px){ /*Con la actualizacion @media es suficiente */
+  .contenedor{
+    max-width: 50vw;
+    text-align: center;
+    padding: 20px 20px 50px;
+    margin: 10% auto 8;
+    background-color: #292b44;
+    border-radius: 9px;
+  }
+
+  .contenedor__flex{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.contenedor__resultado {
+  font-size: 1.2rem;
+}
+
+.contenedor__resultado h3{
+  font-size: 2rem;
+  margin: 0 0 1rem;
+}
+
+.contenedor__resultado p{
+  margin: .8rem 0;
+}
+
+.mensaje__alerta {
+  color: rgb(177,95,95);
+  font-size: .9rem;
+  padding: .5rem 0;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>API Weather</title>
+
+</head>
+<body>
+
+  <section class="contenedor">
+    <h1 class="contenedor__titulo">Buscador de Clima</h1>
+    <div class="contenedor__resultado">
+      <p class="contenedor__datos" id="contenedor__datos">Agregue la ciudad y pais de busqueda</p>
+    </div>
+
+    <form id="formulario">
+      <div class="contenedor__flex">
+        <select id="pais">
+          <option disabled selected >Selecciona tu País</option>
+          <option value="AR">Argentina</option>
+          <option value="CL">Chile</option>
+          <option value="CO">Colombia</option>
+          <option value="CR">Costa Rica</option>
+          <option value="ES">España</option>
+          <option value="US">Estados Unidos</option>
+          <option value="MX">Mexico</option>
+          <option value="PE">Peru</option>
+        </select>
+        <input type="text" name="ciudad" id="ciudad" placeholder="Escribe tu ciudad...">
+      </div>
+      <input type="submit" class="btn" value="Consultar">
+    </form>
+  </section>
+
+  
+  <script src="main.js"></script>
+</body>
+</html>
